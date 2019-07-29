@@ -1,2 +1,2 @@
 # OpenCV pre-processing
-Toy exemple with various pre-processing 
+OpenCV/Python3 toy examples with various pre-processing 
