@@ -1,2 +1,2 @@
-# ZCA_whitening
-Simple Python code for image whitening using ZCA 
+# OpenCV pre-processing
+Toy exemple with various pre-processing 
