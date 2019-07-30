@@ -18,7 +18,7 @@ while True:
     img = cv2.resize(img, (65,65))
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     float_gray = gray.astype(np.float32) / 255.0
-    blur = cv2.GaussianBlur(float_gray, (0, 0), sigmaX=10, sigmaY=10)
+    blur = cv2.GaussianBlur(float_gray, (0, 0), sigmaX=2, sigmaY=2)
     num = float_gray - blur
     blur = cv2.GaussianBlur(num*num, (0, 0), sigmaX=20, sigmaY=20)
     den = cv2.pow(blur, 0.5)
