@@ -3,3 +3,5 @@ OpenCV/Python3 toy examples with various pre-processing (mainly for edge/shape e
 - ZCA : Zero Phase Whitening
 - Gabor Filters bank : edge extraction 
 - LCN : Local Contrast Normalization
+- Laplacian : edge detection
+- Sobel derivative : edge detection
