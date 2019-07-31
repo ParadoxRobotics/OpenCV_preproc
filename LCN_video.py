@@ -4,10 +4,9 @@ import cv2
 import imutils
 from imutils.video import WebcamVideoStream
 
-
 print("Camera init -> DONE")
 cam = WebcamVideoStream(src=0).start()
-print("Starting MECHA_CORTEX_V5...")
+print("Start LCN...")
 
 # Local Contrast Normalization LCN
 

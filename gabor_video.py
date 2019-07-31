@@ -8,16 +8,16 @@ from imutils.video import WebcamVideoStream
 
 print("Camera init -> DONE")
 cam = WebcamVideoStream(src=0).start()
-print("Starting MECHA_CORTEX_V5...")
+print("Start Gabor...")
 
 # Main function from :
 # https://cvtuts.wordpress.com/2014/04/27/gabor-filters-a-practical-overview/
 
 def build_filters():
     filters = []
-    ksize = 30
+    ksize = 21
     for theta in np.arange(0, np.pi, np.pi / 16):
-        kern = cv2.getGaborKernel((ksize, ksize), 3, theta, 8, 10, 0, ktype=cv2.CV_32F)
+        kern = cv2.getGaborKernel((ksize, ksize), 5, theta, 1, 0, 0, ktype=cv2.CV_32F)
         kern /= 1.5*kern.sum()
         filters.append(kern)
     return filters
@@ -34,7 +34,7 @@ while True:
     # Capture state Xt
     img = cam.read()
     # grayscale -> 0 to 255
-    img = cv2.resize(img, (65,65))
+    img = cv2.resize(img, (128,128))
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     res1 = process(gray, filters)
 
