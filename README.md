@@ -4,4 +4,5 @@ OpenCV/Python3 toy examples with various pre-processing (mainly for edge/shape e
 - Gabor Filters bank : edge extraction 
 - LCN : Local Contrast Normalization
 - Laplacian : edge detection
+- DoG : Difference of Gaussian for edge detection
 - Sobel derivative : edge detection
