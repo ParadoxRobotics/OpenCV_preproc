@@ -6,3 +6,4 @@ OpenCV/Python3 toy examples with various pre-processing (mainly for edge/shape e
 - Laplacian : edge detection
 - DoG : Difference of Gaussian for edge detection
 - Sobel derivative : edge detection
+- DoG_Pyramid : difference of gaussian pyramid for keypoint extraction
